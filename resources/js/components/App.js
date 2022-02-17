@@ -5,6 +5,7 @@ import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import Footer from './layouts/Footer';
 import Header from './Layouts/Header';
 import About from './pages/About';
+import Register from './pages/Auth/Register';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import ProjectCreate from './pages/projects/ProjectCreate';
@@ -23,6 +24,7 @@ const App = () => {
             <Route path="/projects/view/:id" element={<ProjectView />} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="/register" element={<Register />} />
         </Routes>
         <Footer/>
     </BrowserRouter>
